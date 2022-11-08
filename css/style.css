@@ -136,11 +136,12 @@ input[type="submit"] {
     text-transform: uppercase;
     font-weight: bold;
     color: var(--main-color);
+    font-size: 1.5rem;
 }
 
 .section-title {
     color: var(--secondary-text-color);
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 .btn {
@@ -171,17 +172,123 @@ input[type="submit"] {
 
 }
 
-i {
+#other-services {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service {
+    position: relative;
+}
+
+.service i {
     position: absolute;
-    padding: 15px;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    font-size: 2.5rem;
     background-color: var(--main-color);
     color: var(--primary-text-color);
-    font-size: 3rem;
     width: 80px;
     height: 80px;
 
 }
 
-#other-services {
-    width: 100%;
+i {
+    
+    padding: 1rem;
+    font-size: 2.5rem;
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    width: 80px;
+    height: 80px;
+}
+
+.service-info {
+    background-color: var(--tertiary-color);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+    margin-top: -3rem;
+    z-index: 2;
+    position: relative;
+}
+
+.service h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/*Sobre nós*/
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about-text {
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+#about-text .section-subtitle,
+#about-text .section-title {
+    color: var(--primary-text-color);
+}
+
+#about-text i {
+    background-color: transparent;   
+}
+
+.about-description {
+    display: flex;
+    align-items: center;
+}
+
+.about-description h4 {
+   font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#about-data {
+    flex:  1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+     align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#about-data .data{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.data i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
 }
